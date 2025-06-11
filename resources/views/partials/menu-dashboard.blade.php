@@ -81,35 +81,22 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.Coffrets_informatique') }}">
-                <button class="btn btn-primary">Coffrets informatique</button>
+            <a class="nav-link" href="{{ route('dashboard.maintenance_preventive') }}">
+                <button class="btn btn-primary">Maintenance preventive</button>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.sous-stations_GTC') }}">
-                <button class="btn btn-secondary">sous-stations GTC</button>
+            <a class="nav-link" href="{{ route('dashboard.maintenance_curative') }}">
+                <button class="btn btn-secondary">Maintenance curative</button>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.Comptage_electrique') }}">
-                <button class="btn btn-success">Comptage electrique</button>
+            <a class="nav-link" href="{{ route('dashboard.gestion_des_tickets_clients') }}">
+                <button class="btn btn-success">Gestion des tickets clients</button>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.Comptage_d\'eau') }}">
-                <button class="btn btn-success">Comptage d'eau</button>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.Salles_PCS') }}">
-                <button class="btn btn-success">Salles PCS</button>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard.Gestion_d\'affichage') }}">
-                <button class="btn btn-success">Gestion d'affichage</button>
-            </a>
-        </li>
+
+
         <!-- Add more buttons as needed -->
     </ul>
 </div>

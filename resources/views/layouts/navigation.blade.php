@@ -12,10 +12,51 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    @if(!request()->routeIs('dashboard'))
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    @endif
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    @if(!request()->routeIs('storeCommonData'))
+                        <x-nav-link :href="route('storeCommonData')" :active="request()->routeIs('storeCommonData')">
+                            {{ __('Maintenance preventive') }}
+                        </x-nav-link>
+                    @endif
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    @if(!request()->routeIs('planning.annuel'))
+                        <x-nav-link :href="route('planning.annuel')" :active="request()->routeIs('planning.annuel')">
+                            {{ __('Planning annuel') }}
+                        </x-nav-link>
+                    @endif
+                </div>
+
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">--}}
+{{--                @if(request()->routeIs('dashboard'))--}}
+{{--                    <x-nav-link :href="route('storeCommonData')" :active="request()->routeIs('storeCommonData')">--}}
+{{--                        {{ __('Maintenance preventive') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                        <x-nav-link :href="route('planning.annuel')" :active="request()->routeIs('planning.annuel')">--}}
+{{--                            {{ __('Planning annuel') }}--}}
+{{--                        </x-nav-link>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">--}}
+{{--                    @if(request()->routeIs('intervention_selection'))--}}
+{{--                        <x-nav-link :href="route('planning.annuel')" :active="request()->routeIs('planning.annuel')">--}}
+{{--                            {{ __('Planning annuel') }}--}}
+{{--                        </x-nav-link>--}}
+{{--                    @endif--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">--}}
+{{--                    @if(request()->routeIs('planning.annuel'))--}}
+{{--                        <x-nav-link :href="route('storeCommonData')" :active="request()->routeIs('storeCommonData')">--}}
+{{--                            {{ __('Maintenance preventive') }}--}}
+{{--                        </x-nav-link>--}}
+{{--                    @endif--}}
+{{--                </div>--}}
             </div>
 
             <!-- Settings Dropdown -->

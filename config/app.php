@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
-return [
+return array(
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +70,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Africa/Casablanca',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -139,10 +140,10 @@ return [
     |
     */
 
-    'maintenance' => [
+    'maintenance' => array(
         'driver' => 'file',
         // 'store' => 'redis',
-    ],
+    ),
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +156,7 @@ return [
     |
     */
 
-    'providers' => ServiceProvider::defaultProviders()->merge([
+    'providers' => ServiceProvider::defaultProviders()->merge(array(
         /*
          * Package Service Providers...
          */
@@ -168,7 +169,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-    ])->toArray(),
+    ))->toArray(),
 
     /*
     |--------------------------------------------------------------------------
@@ -181,8 +182,8 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
+    'aliases' => Facade::defaultAliases()->merge(array(
         // 'Example' => App\Facades\Example::class,
-    ])->toArray(),
+    ))->toArray(),
 
-];
+);
