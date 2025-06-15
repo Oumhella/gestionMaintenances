@@ -2,6 +2,11 @@
     <div class="min-h-screen flex items-center justify-center bg-white px-4 py-12">
         <div class="w-full max-w-md bg-white border border-gray-200 rounded-xl shadow-md p-8">
             <!-- Title -->
+            <div>
+                <a href="/">
+                    <center><x-application-logo class="w-20 h-20 fill-current text-gray-500" /></center>
+                </a>
+            </div>
             <h2 class="text-2xl font-bold text-violet-700 text-center mb-6">Se connecter</h2>
 
             <!-- Session Status -->
